@@ -1,0 +1,89 @@
+Today's Topics:
+    * iframe review
+        - What is iframe?
+            page in page, HTML inside another html
+        - How do you handle iframes? (PIQ)
+            we need to switch to <iframe> to be able to do any action on any web element inside of it
+        - How many ways do you know to switch
+            3 Ways
+            1. index
+                    driver.switchTo().frame(0)
+            2. id, name
+                    driver.switchTo().frame("id")
+                    driver.switchTo().frame("name")
+            3. web element
+                WebElement iframeLocator = driver.findElement(By.Locator);
+                driver.switchTo().frame(iframeLocator)
+
+TestBase: parent of all the tests in our framework, by extending our test cases
+we can easily handle before and after methods of test cases
+
+If you have a WebElement that disappears after some certain time we can stop DOM(HTML) in debug mode:
+How: at inspect page, click on Sources, then click F8 button at your computer
+
+
+Test Case for Practice:
+//1. Go to https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_ondblclick2
+//2. Switch to iframe.
+//3. Double click on the text “Double-click me to change my text color.”
+//4. Assert: Text’s “style” attribute value contains “red”.
+
+
+    * Actions review
+           Actions Class: is used for "advanced" mouse and keyboard actions
+           * How to use Actions
+            1. Create an object of Actions Class
+            2. Pass "driver" object as a parameter
+            3. USe the object to reach actions methods
+            4. We must use perform() method at the end of the statement
+            Methods: action.moveToElement().perform();
+                     action.doubleClick().perform();
+
+    * POM: Page Object Model review
+        What is Page Object Model Design Pattern
+            We create JAVA classes for our each page of the project
+            We are storing useful WebElements(reusable), methods
+        How do we implement POM Design?
+            constructor: PageFactory class from Selelnium
+            gets two parameters: driver object, this (object of the specific class)
+        Advantages:
+            - Reusability
+            - easy to maintain
+            - easy to explain non-technical people
+            - handles StaleElement exception, it checks for freshness of the element
+
+**** Between POM pages, you can create inheritance relationship
+If you have a page which is the default (means you see it whereever you navigate) page, then you define it as parent of other POM pages
+**********************************************
+        *** Homework for later
+                   create POM pages for allProducts and Order page
+Homework 2
+Go to http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx
+Login: credentials(Tester and test)
+Navigate to Orders link, then navigate back to AllOrders link
+click on one checkBox for "Charles Dodgeson"
+then click deleteButton
+then logout from the page
+************************************************************
+    * New Topic: Explicitly Wait
+    PIQ: How do you handle synchronization in Selenium?
+    What is synchronization?
+        Moving, working, operating at the same time
+        in movies voice and picture do not operate together
+        men (from Mars) and women (from Venus)
+
+    In Web Automation: JAVA is fast,  web page is slower, we need to handle this synchronization problem
+    otherwise our code will break.
+
+    1. Static Wait: Thread.sleep method from JAVA--- BrowserUtils.sleep method
+            I put 2 seconds for my test, my freind clones the project, but 2 seconds not enough for him
+            Environmental pronlem, maybe the internet is slower at his house
+    2. Dynamic Waits:
+            * Implicit Wait ( applies to all elements of the project, you need to define one time)
+            * Explicit Wait
+                Can be used to wait under certain condition
+                        - wait until element is visible
+                        - wait until element is clickable
+                Does not depend on the wait time of Implicit wait
+                Only applies one time in that line that is used
+

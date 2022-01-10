@@ -1,0 +1,831 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>43/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Dec 18 12:05:06 EST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>427 seconds (427531 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cybertek.tests.day19_page_object_model.DragAndDropTest.cargurusPriceSliderTest()'><b>cargurusPriceSliderTest</b><br>Test class: com.cybertek.tests.day19_page_object_model.DragAndDropTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//button[@aria-valuemin=&apos;3000&apos;])[1]&quot;}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Zeynabs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:81a:3b8b:484:a489%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/33/jjj5dygj359...}, goog:chromeOptions: {debuggerAddress: localhost:51542}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f26375c43d36b3b02fb09caa89a68694
+*** Element info: {Using=xpath, value=(//button[@aria-valuemin=&apos;3000&apos;])[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.cybertek.tests.day19_page_object_model.DragAndDropTest.cargurusPriceSliderTest(DragAndDropTest.java:52)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 41 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2099208399", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2099208399'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//button[@aria-valuemin=&apos;3000&apos;])[1]&quot;}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Zeynabs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:81a:3b8b:484:a489%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/33/jjj5dygj359...}, goog:chromeOptions: {debuggerAddress: localhost:51542}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f26375c43d36b3b02fb09caa89a68694
+*** Element info: {Using=xpath, value=(//button[@aria-valuemin=&apos;3000&apos;])[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.cybertek.tests.day19_page_object_model.DragAndDropTest.cargurusPriceSliderTest(DragAndDropTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>29</td>
+<td>com.cybertek.tests.day19_page_object_model.DragAndDropTest@43bd930a</td></tr>
+<tr>
+<td title='com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest.confirmAlertTest()'><b>confirmAlertTest</b><br>Test class: com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest</td>
+<td><div><pre>java.lang.AssertionError: expected [You successfuly clicked an alert] but found [You clicked: Cancel]
+	at com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest.confirmAlertTest(AlertExamplesTest.java:64)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 43 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1392482765", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1392482765'><pre>java.lang.AssertionError: expected [You successfuly clicked an alert] but found [You clicked: Cancel]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest.confirmAlertTest(AlertExamplesTest.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>0</td>
+<td>com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest@11758f2a</td></tr>
+<tr>
+<td title='com.cybertek.tests.day16_download_js_executor.FileUploadTest.uploadFileTest()'><b>uploadFileTest</b><br>Test class: com.cybertek.tests.day16_download_js_executor.FileUploadTest</td>
+<td><div><pre>org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : /Users/zeynabnasibova/Downloads/some-file.txt
+  (Session info: chrome=96.0.4664.110)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Zeynabs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:81a:3b8b:484:a489%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/33/jjj5dygj359...}, goog:chromeOptions: {debuggerAddress: localhost:50566}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dcd5519bd4312d00482ef73d20015dca
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.cybertek.tests.day16_download_js_executor.FileUploadTest.uploadFileTest(FileUploadTest.java:16)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 41 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1713252253", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1713252253'><pre>org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : /Users/zeynabnasibova/Downloads/some-file.txt
+  (Session info: chrome=96.0.4664.110)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Zeynabs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:81a:3b8b:484:a489%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/33/jjj5dygj359...}, goog:chromeOptions: {debuggerAddress: localhost:50566}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dcd5519bd4312d00482ef73d20015dca
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.cybertek.tests.day16_download_js_executor.FileUploadTest.uploadFileTest(FileUploadTest.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>1</td>
+<td>com.cybertek.tests.day16_download_js_executor.FileUploadTest@66d1af89</td></tr>
+<tr>
+<td title='com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest.googleFeelingLuckyBtnHoverTest()'><b>googleFeelingLuckyBtnHoverTest</b><br>Test class: com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;FPdoLc&apos;]&quot;}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Zeynabs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:81a:3b8b:484:a489%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/33/jjj5dygj359...}, goog:chromeOptions: {debuggerAddress: localhost:50711}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1bc6ec75c66f386ec7418121922b3210
+*** Element info: {Using=xpath, value=//div[@class=&apos;FPdoLc&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest.googleFeelingLuckyBtnHoverTest(ActionsDemoTest.java:55)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 41 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2079418738", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2079418738'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;FPdoLc&apos;]&quot;}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Zeynabs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:81a:3b8b:484:a489%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/33/jjj5dygj359...}, goog:chromeOptions: {debuggerAddress: localhost:50711}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1bc6ec75c66f386ec7418121922b3210
+*** Element info: {Using=xpath, value=//div[@class=&apos;FPdoLc&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest.googleFeelingLuckyBtnHoverTest(ActionsDemoTest.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>12</td>
+<td>com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest@6950e31</td></tr>
+<tr>
+<td title='com.cybertek.officeHours.oH04.placeOrderTest.placeOrder()'><b>placeOrder</b><br>Test class: com.cybertek.officeHours.oH04.placeOrderTest</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Zeynabs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:81a:3b8b:484:a489%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/33/jjj5dygj359...}, goog:chromeOptions: {debuggerAddress: localhost:49465}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6024a37fb23914e4eebfe92170a3a7cd
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.cybertek.utils.officeUtils.addProduct(officeUtils.java:24)
+	at com.cybertek.officeHours.oH04.placeOrderTest.placeOrder(placeOrderTest.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 41 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1947941827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1947941827'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Zeynabs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:81a:3b8b:484:a489%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/33/jjj5dygj359...}, goog:chromeOptions: {debuggerAddress: localhost:49465}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6024a37fb23914e4eebfe92170a3a7cd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.cybertek.utils.officeUtils.addProduct(officeUtils.java:24)
+	at com.cybertek.officeHours.oH04.placeOrderTest.placeOrder(placeOrderTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>2</td>
+<td>com.cybertek.officeHours.oH04.placeOrderTest@2c039ac6</td></tr>
+<tr>
+<td title='com.cybertek.tests.day17_upload_js_executor.Guru99UploadTest.uploadFileTest()'><b>uploadFileTest</b><br>Test class: com.cybertek.tests.day17_upload_js_executor.Guru99UploadTest</td>
+<td><div><pre>org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : /Users/zeynabnasibova/Downloads/some-file.txt
+  (Session info: chrome=96.0.4664.110)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Zeynabs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:81a:3b8b:484:a489%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/33/jjj5dygj359...}, goog:chromeOptions: {debuggerAddress: localhost:49481}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 97da46b27c3dac247acf38dec491dc02
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.cybertek.tests.day17_upload_js_executor.Guru99UploadTest.uploadFileTest(Guru99UploadTest.java:29)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 41 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1504321715", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1504321715'><pre>org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : /Users/zeynabnasibova/Downloads/some-file.txt
+  (Session info: chrome=96.0.4664.110)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Zeynabs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:81a:3b8b:484:a489%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/33/jjj5dygj359...}, goog:chromeOptions: {debuggerAddress: localhost:49481}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 97da46b27c3dac247acf38dec491dc02
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.cybertek.tests.day17_upload_js_executor.Guru99UploadTest.uploadFileTest(Guru99UploadTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>1</td>
+<td>com.cybertek.tests.day17_upload_js_executor.Guru99UploadTest@87f383f</td></tr>
+<tr>
+<td title='com.cybertek.tests.day08_implicitwait_checkbox_radio_testing.TestNGIntro.test2()'><b>test2</b><br>Test class: com.cybertek.tests.day08_implicitwait_checkbox_radio_testing.TestNGIntro</td>
+<td><div><pre>java.lang.ArithmeticException: / by zero
+	at com.cybertek.tests.day08_implicitwait_checkbox_radio_testing.TestNGIntro.test2(TestNGIntro.java:13)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace553672556", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace553672556'><pre>java.lang.ArithmeticException: / by zero
+	at com.cybertek.tests.day08_implicitwait_checkbox_radio_testing.TestNGIntro.test2(TestNGIntro.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>0</td>
+<td>com.cybertek.tests.day08_implicitwait_checkbox_radio_testing.TestNGIntro@6121c9d6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest.alertExampleTest()'><b>alertExampleTest</b><br>Test class: com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest</td>
+<td></td>
+<td>2</td>
+<td>com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest@eafc191</td></tr>
+<tr>
+<td title='com.cybertek.tests.day08_implicitwait_checkbox_radio_testing.TestNGIntro.test1()'><b>test1</b><br>Test class: com.cybertek.tests.day08_implicitwait_checkbox_radio_testing.TestNGIntro</td>
+<td></td>
+<td>0</td>
+<td>com.cybertek.tests.day08_implicitwait_checkbox_radio_testing.TestNGIntro@6121c9d6</td></tr>
+<tr>
+<td title='com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest.infoAlertTest()'><b>infoAlertTest</b><br>Test class: com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest</td>
+<td></td>
+<td>0</td>
+<td>com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest@11758f2a</td></tr>
+<tr>
+<td title='com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest.promptAlertTest()'><b>promptAlertTest</b><br>Test class: com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest</td>
+<td></td>
+<td>3</td>
+<td>com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest@11758f2a</td></tr>
+<tr>
+<td title='com.cybertek.tests.day09_testing_dropdowns.DropDownTest.titleTest()'><b>titleTest</b><br>Test class: com.cybertek.tests.day09_testing_dropdowns.DropDownTest</td>
+<td></td>
+<td>0</td>
+<td>com.cybertek.tests.day09_testing_dropdowns.DropDownTest@4671e53b</td></tr>
+<tr>
+<td title='com.cybertek.tests.day15_properties_driverutil_testbase.DriverUtilTest.driverClasstest()'><b>driverClasstest</b><br>Test class: com.cybertek.tests.day15_properties_driverutil_testbase.DriverUtilTest</td>
+<td></td>
+<td>19</td>
+<td>com.cybertek.tests.day15_properties_driverutil_testbase.DriverUtilTest@491cc5c9</td></tr>
+<tr>
+<td title='com.cybertek.tests.day16_download_js_executor.FileDownloadTest.fileDownloadTest()'><b>fileDownloadTest</b><br>Test class: com.cybertek.tests.day16_download_js_executor.FileDownloadTest</td>
+<td></td>
+<td>3</td>
+<td>com.cybertek.tests.day16_download_js_executor.FileDownloadTest@4a87761d</td></tr>
+<tr>
+<td title='com.cybertek.tests.day09_testing_dropdowns.TestNGIntro.myTest2()'><b>myTest2</b><br>Test class: com.cybertek.tests.day09_testing_dropdowns.TestNGIntro</td>
+<td></td>
+<td>0</td>
+<td>com.cybertek.tests.day09_testing_dropdowns.TestNGIntro@2db7a79b</td></tr>
+<tr>
+<td title='com.cybertek.tests.day11_alerts_iframe_windows.MultipleWindowsExampleTest.demoQAMultipleWindows()'><b>demoQAMultipleWindows</b><br>Test class: com.cybertek.tests.day11_alerts_iframe_windows.MultipleWindowsExampleTest</td>
+<td></td>
+<td>2</td>
+<td>com.cybertek.tests.day11_alerts_iframe_windows.MultipleWindowsExampleTest@e720b71</td></tr>
+<tr>
+<td title='com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest.getAllColumnData()'><b>getAllColumnData</b><br>Test class: com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest@612fc6eb</td></tr>
+<tr>
+<td title='com.cybertek.tests.day09_testing_dropdowns.DropDownTest.simpleDropDownTest()'><b>simpleDropDownTest</b><br>Test class: com.cybertek.tests.day09_testing_dropdowns.DropDownTest</td>
+<td></td>
+<td>0</td>
+<td>com.cybertek.tests.day09_testing_dropdowns.DropDownTest@4671e53b</td></tr>
+<tr>
+<td title='com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest.scrollToElementTest()'><b>scrollToElementTest</b><br>Test class: com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest</td>
+<td></td>
+<td>4</td>
+<td>com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest@eafc191</td></tr>
+<tr>
+<td title='com.cybertek.tests.day13_faker_practice_browserutil_properties.RegistrationFormNegativeTest.invalidFirstNameTest()'><b>invalidFirstNameTest</b><br>Test class: com.cybertek.tests.day13_faker_practice_browserutil_properties.RegistrationFormNegativeTest</td>
+<td></td>
+<td>4</td>
+<td>com.cybertek.tests.day13_faker_practice_browserutil_properties.RegistrationFormNegativeTest@8646db9</td></tr>
+<tr>
+<td title='com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest.hoverOverGroupElements()'><b>hoverOverGroupElements</b><br>Test class: com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest</td>
+<td></td>
+<td>4</td>
+<td>com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest@6950e31</td></tr>
+<tr>
+<td title='com.cybertek.tests.day20_review_wait.IframeActionsTest.test()'><b>test</b><br>Test class: com.cybertek.tests.day20_review_wait.IframeActionsTest</td>
+<td></td>
+<td>11</td>
+<td>com.cybertek.tests.day20_review_wait.IframeActionsTest@192d3247</td></tr>
+<tr>
+<td title='com.cybertek.tests.day18_actions_pom_intro.ActionsDragAndDropTest.dragAndDropTest()'><b>dragAndDropTest</b><br>Test class: com.cybertek.tests.day18_actions_pom_intro.ActionsDragAndDropTest</td>
+<td></td>
+<td>2</td>
+<td>com.cybertek.tests.day18_actions_pom_intro.ActionsDragAndDropTest@52f759d7</td></tr>
+<tr>
+<td title='com.cybertek.tests.day18_actions_pom_intro.ActionsDoubleClickTest.doubleClickForColorChange()'><b>doubleClickForColorChange</b><br>Test class: com.cybertek.tests.day18_actions_pom_intro.ActionsDoubleClickTest</td>
+<td></td>
+<td>10</td>
+<td>com.cybertek.tests.day18_actions_pom_intro.ActionsDoubleClickTest@b7dd107</td></tr>
+<tr>
+<td title='com.cybertek.tests.day19_page_object_model.LibraryLoginPOMTest.invalidCredentialsTest()'><b>invalidCredentialsTest</b><br>Test class: com.cybertek.tests.day19_page_object_model.LibraryLoginPOMTest</td>
+<td></td>
+<td>1</td>
+<td>com.cybertek.tests.day19_page_object_model.LibraryLoginPOMTest@569cfc36</td></tr>
+<tr>
+<td title='com.cybertek.tests.day11_alerts_iframe_windows.IFrameExampleTest.iframeTest()'><b>iframeTest</b><br>Test class: com.cybertek.tests.day11_alerts_iframe_windows.IFrameExampleTest</td>
+<td></td>
+<td>5</td>
+<td>com.cybertek.tests.day11_alerts_iframe_windows.IFrameExampleTest@612679d6</td></tr>
+<tr>
+<td title='com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest.setValueusingJSTest()'><b>setValueusingJSTest</b><br>Test class: com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest</td>
+<td></td>
+<td>3</td>
+<td>com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest@eafc191</td></tr>
+<tr>
+<td title='com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest.readFromTableTest()'><b>readFromTableTest</b><br>Test class: com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest@612fc6eb</td></tr>
+<tr>
+<td title='com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest.readNeighborCell()'><b>readNeighborCell</b><br>Test class: com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest@612fc6eb</td></tr>
+<tr>
+<td title='com.cybertek.tests.day14_utils_webtables_properties.SmartBearProductTest.verifyLinksAfterLogin()'><b>verifyLinksAfterLogin</b><br>Test class: com.cybertek.tests.day14_utils_webtables_properties.SmartBearProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.cybertek.tests.day14_utils_webtables_properties.SmartBearProductTest@1060b431</td></tr>
+<tr>
+<td title='com.cybertek.tests.day11_alerts_iframe_windows.IFrameExampleTest.multipleFramesTest()'><b>multipleFramesTest</b><br>Test class: com.cybertek.tests.day11_alerts_iframe_windows.IFrameExampleTest</td>
+<td></td>
+<td>0</td>
+<td>com.cybertek.tests.day11_alerts_iframe_windows.IFrameExampleTest@612679d6</td></tr>
+<tr>
+<td title='com.cybertek.tests.day18_actions_pom_intro.ActionsSendKeysTest.scrollWithKeysTest()'><b>scrollWithKeysTest</b><br>Test class: com.cybertek.tests.day18_actions_pom_intro.ActionsSendKeysTest</td>
+<td></td>
+<td>4</td>
+<td>com.cybertek.tests.day18_actions_pom_intro.ActionsSendKeysTest@7cbd213e</td></tr>
+<tr>
+<td title='com.cybertek.tests.day15_properties_driverutil_testbase.PropertiesFileTest.configurationReaderUnitTest()'><b>configurationReaderUnitTest</b><br>Test class: com.cybertek.tests.day15_properties_driverutil_testbase.PropertiesFileTest</td>
+<td></td>
+<td>0</td>
+<td>com.cybertek.tests.day15_properties_driverutil_testbase.PropertiesFileTest@1b26f7b2</td></tr>
+<tr>
+<td title='com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest.printAllTableDataTest()'><b>printAllTableDataTest</b><br>Test class: com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest@612fc6eb</td></tr>
+<tr>
+<td title='com.cybertek.tests.day13_faker_practice_browserutil_properties.RegistrationFormTest.formTest()'><b>formTest</b><br>Test class: com.cybertek.tests.day13_faker_practice_browserutil_properties.RegistrationFormTest</td>
+<td></td>
+<td>6</td>
+<td>com.cybertek.tests.day13_faker_practice_browserutil_properties.RegistrationFormTest@37374a5e</td></tr>
+<tr>
+<td title='com.cybertek.tests.day18_actions_pom_intro.EtsySubscribeTest.randomEmailSubscribeTest()'><b>randomEmailSubscribeTest</b><br>Test class: com.cybertek.tests.day18_actions_pom_intro.EtsySubscribeTest</td>
+<td></td>
+<td>10</td>
+<td>com.cybertek.tests.day18_actions_pom_intro.EtsySubscribeTest@42eca56e</td></tr>
+<tr>
+<td title='com.cybertek.tests.day15_properties_driverutil_testbase.SystemPropertiesTest.readingSystemProperties()'><b>readingSystemProperties</b><br>Test class: com.cybertek.tests.day15_properties_driverutil_testbase.SystemPropertiesTest</td>
+<td></td>
+<td>0</td>
+<td>com.cybertek.tests.day15_properties_driverutil_testbase.SystemPropertiesTest@74ad1f1f</td></tr>
+<tr>
+<td title='com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest.scrollTest()'><b>scrollTest</b><br>Test class: com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest</td>
+<td></td>
+<td>13</td>
+<td>com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest@eafc191</td></tr>
+<tr>
+<td title='com.cybertek.tests.day15_properties_driverutil_testbase.TechlisticWebtableTest.tallBuildingsTableTest()'><b>tallBuildingsTableTest</b><br>Test class: com.cybertek.tests.day15_properties_driverutil_testbase.TechlisticWebtableTest</td>
+<td></td>
+<td>5</td>
+<td>com.cybertek.tests.day15_properties_driverutil_testbase.TechlisticWebtableTest@6a1aab78</td></tr>
+<tr>
+<td title='com.cybertek.tests.day19_page_object_model.DragAndDropTest.guru99DragAndDropTest()'><b>guru99DragAndDropTest</b><br>Test class: com.cybertek.tests.day19_page_object_model.DragAndDropTest</td>
+<td></td>
+<td>5</td>
+<td>com.cybertek.tests.day19_page_object_model.DragAndDropTest@43bd930a</td></tr>
+<tr>
+<td title='com.cybertek.tests.day10_dropdow_alerts_iframes_windows.CarGurusUsedCarSearchTest.searchForMinivanTest()'><b>searchForMinivanTest</b><br>Test class: com.cybertek.tests.day10_dropdow_alerts_iframes_windows.CarGurusUsedCarSearchTest</td>
+<td></td>
+<td>89</td>
+<td>com.cybertek.tests.day10_dropdow_alerts_iframes_windows.CarGurusUsedCarSearchTest@757942a1</td></tr>
+<tr>
+<td title='com.cybertek.tests.day09_testing_dropdowns.TestNGIntro.test1()'><b>test1</b><br>Test class: com.cybertek.tests.day09_testing_dropdowns.TestNGIntro</td>
+<td></td>
+<td>0</td>
+<td>com.cybertek.tests.day09_testing_dropdowns.TestNGIntro@2db7a79b</td></tr>
+<tr>
+<td title='com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest.hoverElementTest()'><b>hoverElementTest</b><br>Test class: com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest</td>
+<td></td>
+<td>2</td>
+<td>com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest@6950e31</td></tr>
+<tr>
+<td title='com.cybertek.tests.day15_properties_driverutil_testbase.PropertiesFileTest.readValuesFromPropertiesFile()'><b>readValuesFromPropertiesFile</b><br>Test class: com.cybertek.tests.day15_properties_driverutil_testbase.PropertiesFileTest</td>
+<td></td>
+<td>0</td>
+<td>com.cybertek.tests.day15_properties_driverutil_testbase.PropertiesFileTest@1b26f7b2</td></tr>
+<tr>
+<td title='com.cybertek.tests.day19_page_object_model.LibraryLoginPOMTest.positiveLoginTest()'><b>positiveLoginTest</b><br>Test class: com.cybertek.tests.day19_page_object_model.LibraryLoginPOMTest</td>
+<td></td>
+<td>2</td>
+<td>com.cybertek.tests.day19_page_object_model.LibraryLoginPOMTest@569cfc36</td></tr>
+<tr>
+<td title='com.cybertek.tests.day10_dropdow_alerts_iframes_windows.AmazonDepartmentNamesListTest.amazonDepartmentTest()'><b>amazonDepartmentTest</b><br>Test class: com.cybertek.tests.day10_dropdow_alerts_iframes_windows.AmazonDepartmentNamesListTest</td>
+<td></td>
+<td>40</td>
+<td>com.cybertek.tests.day10_dropdow_alerts_iframes_windows.AmazonDepartmentNamesListTest@462d5aee</td></tr>
+<tr>
+<td title='com.cybertek.tests.day18_actions_pom_intro.ActionsSendKeysTest.rightClickTest()'><b>rightClickTest</b><br>Test class: com.cybertek.tests.day18_actions_pom_intro.ActionsSendKeysTest</td>
+<td></td>
+<td>1</td>
+<td>com.cybertek.tests.day18_actions_pom_intro.ActionsSendKeysTest@7cbd213e</td></tr>
+<tr>
+<td title='com.cybertek.tests.day10_dropdow_alerts_iframes_windows.HandingAlertsTest.jsAlertsTest()'><b>jsAlertsTest</b><br>Test class: com.cybertek.tests.day10_dropdow_alerts_iframes_windows.HandingAlertsTest</td>
+<td></td>
+<td>0</td>
+<td>com.cybertek.tests.day10_dropdow_alerts_iframes_windows.HandingAlertsTest@69b0fd6f</td></tr>
+<tr>
+<td title='com.cybertek.tests.day11_alerts_iframe_windows.MultipleWindowsExampleTest.windowsTest()'><b>windowsTest</b><br>Test class: com.cybertek.tests.day11_alerts_iframe_windows.MultipleWindowsExampleTest</td>
+<td></td>
+<td>1</td>
+<td>com.cybertek.tests.day11_alerts_iframe_windows.MultipleWindowsExampleTest@e720b71</td></tr>
+<tr>
+<td title='com.cybertek.tests.day12_windows_practice_faker.DemoQAMultipleWindowsTest.newWindowTest()'><b>newWindowTest</b><br>Test class: com.cybertek.tests.day12_windows_practice_faker.DemoQAMultipleWindowsTest</td>
+<td></td>
+<td>4</td>
+<td>com.cybertek.tests.day12_windows_practice_faker.DemoQAMultipleWindowsTest@3ecd23d9</td></tr>
+</table><p>
+</body>
+</html>

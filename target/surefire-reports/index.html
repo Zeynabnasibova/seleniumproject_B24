@@ -1,0 +1,2082 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
+              <span class="suite-name border-failed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Command_line_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Command_line_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Command_line_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Command_line_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Command_line_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Command_line_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Command_line_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">50 methods, 7 failed,   43 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day19_page_object_model.DragAndDropTest" hash-for-method="cargurusPriceSliderTest">cargurusPriceSliderTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest" hash-for-method="confirmAlertTest">confirmAlertTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest" hash-for-method="googleFeelingLuckyBtnHoverTest">googleFeelingLuckyBtnHoverTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.officeHours.oH04.placeOrderTest" hash-for-method="placeOrder">placeOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day08_implicitwait_checkbox_radio_testing.TestNGIntro" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day16_download_js_executor.FileUploadTest" hash-for-method="uploadFileTest">uploadFileTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day17_upload_js_executor.Guru99UploadTest" hash-for-method="uploadFileTest">uploadFileTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest" hash-for-method="alertExampleTest">alertExampleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day10_dropdow_alerts_iframes_windows.AmazonDepartmentNamesListTest" hash-for-method="amazonDepartmentTest">amazonDepartmentTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day15_properties_driverutil_testbase.PropertiesFileTest" hash-for-method="configurationReaderUnitTest">configurationReaderUnitTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day11_alerts_iframe_windows.MultipleWindowsExampleTest" hash-for-method="demoQAMultipleWindows">demoQAMultipleWindows</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day18_actions_pom_intro.ActionsDoubleClickTest" hash-for-method="doubleClickForColorChange">doubleClickForColorChange</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day18_actions_pom_intro.ActionsDragAndDropTest" hash-for-method="dragAndDropTest">dragAndDropTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day15_properties_driverutil_testbase.DriverUtilTest" hash-for-method="driverClasstest">driverClasstest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day16_download_js_executor.FileDownloadTest" hash-for-method="fileDownloadTest">fileDownloadTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day13_faker_practice_browserutil_properties.RegistrationFormTest" hash-for-method="formTest">formTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest" hash-for-method="getAllColumnData">getAllColumnData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day19_page_object_model.DragAndDropTest" hash-for-method="guru99DragAndDropTest">guru99DragAndDropTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest" hash-for-method="hoverElementTest">hoverElementTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest" hash-for-method="hoverOverGroupElements">hoverOverGroupElements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day11_alerts_iframe_windows.IFrameExampleTest" hash-for-method="iframeTest">iframeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest" hash-for-method="infoAlertTest">infoAlertTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day19_page_object_model.LibraryLoginPOMTest" hash-for-method="invalidCredentialsTest">invalidCredentialsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day13_faker_practice_browserutil_properties.RegistrationFormNegativeTest" hash-for-method="invalidFirstNameTest">invalidFirstNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day10_dropdow_alerts_iframes_windows.HandingAlertsTest" hash-for-method="jsAlertsTest">jsAlertsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day11_alerts_iframe_windows.IFrameExampleTest" hash-for-method="multipleFramesTest">multipleFramesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day09_testing_dropdowns.TestNGIntro" hash-for-method="myTest2">myTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day12_windows_practice_faker.DemoQAMultipleWindowsTest" hash-for-method="newWindowTest">newWindowTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day19_page_object_model.LibraryLoginPOMTest" hash-for-method="positiveLoginTest">positiveLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest" hash-for-method="printAllTableDataTest">printAllTableDataTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest" hash-for-method="promptAlertTest">promptAlertTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day18_actions_pom_intro.EtsySubscribeTest" hash-for-method="randomEmailSubscribeTest">randomEmailSubscribeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest" hash-for-method="readFromTableTest">readFromTableTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest" hash-for-method="readNeighborCell">readNeighborCell</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day15_properties_driverutil_testbase.PropertiesFileTest" hash-for-method="readValuesFromPropertiesFile">readValuesFromPropertiesFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day15_properties_driverutil_testbase.SystemPropertiesTest" hash-for-method="readingSystemProperties">readingSystemProperties</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day18_actions_pom_intro.ActionsSendKeysTest" hash-for-method="rightClickTest">rightClickTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest" hash-for-method="scrollTest">scrollTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest" hash-for-method="scrollToElementTest">scrollToElementTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day18_actions_pom_intro.ActionsSendKeysTest" hash-for-method="scrollWithKeysTest">scrollWithKeysTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day10_dropdow_alerts_iframes_windows.CarGurusUsedCarSearchTest" hash-for-method="searchForMinivanTest">searchForMinivanTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest" hash-for-method="setValueusingJSTest">setValueusingJSTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day09_testing_dropdowns.DropDownTest" hash-for-method="simpleDropDownTest">simpleDropDownTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day15_properties_driverutil_testbase.TechlisticWebtableTest" hash-for-method="tallBuildingsTableTest">tallBuildingsTableTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day20_review_wait.IframeActionsTest" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day08_implicitwait_checkbox_radio_testing.TestNGIntro" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day09_testing_dropdowns.TestNGIntro" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day09_testing_dropdowns.DropDownTest" hash-for-method="titleTest">titleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day14_utils_webtables_properties.SmartBearProductTest" hash-for-method="verifyLinksAfterLogin">verifyLinksAfterLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cybertek.tests.day11_alerts_iframe_windows.MultipleWindowsExampleTest" hash-for-method="windowsTest">windowsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.cybertek.tests.day19_page_object_model.DragAndDropTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cargurusPriceSliderTest">
+                  </a> <!-- cargurusPriceSliderTest -->
+                  <span class="method-name">cargurusPriceSliderTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//button[@aria-valuemin=&apos;3000&apos;])[1]&quot;}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Zeynabs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:81a:3b8b:484:a489%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/33/jjj5dygj359...}, goog:chromeOptions: {debuggerAddress: localhost:51542}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f26375c43d36b3b02fb09caa89a68694
+*** Element info: {Using=xpath, value=(//button[@aria-valuemin=&apos;3000&apos;])[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.cybertek.tests.day19_page_object_model.DragAndDropTest.cargurusPriceSliderTest(DragAndDropTest.java:52)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 41 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.cybertek.tests.day17_upload_js_executor.Guru99UploadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadFileTest">
+                  </a> <!-- uploadFileTest -->
+                  <span class="method-name">uploadFileTest</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : /Users/zeynabnasibova/Downloads/some-file.txt
+  (Session info: chrome=96.0.4664.110)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Zeynabs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:81a:3b8b:484:a489%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/33/jjj5dygj359...}, goog:chromeOptions: {debuggerAddress: localhost:49481}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 97da46b27c3dac247acf38dec491dc02
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.cybertek.tests.day17_upload_js_executor.Guru99UploadTest.uploadFileTest(Guru99UploadTest.java:29)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 41 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.cybertek.tests.day08_implicitwait_checkbox_radio_testing.TestNGIntro</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
+                  <div class="stack-trace">java.lang.ArithmeticException: / by zero
+	at com.cybertek.tests.day08_implicitwait_checkbox_radio_testing.TestNGIntro.test2(TestNGIntro.java:13)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="googleFeelingLuckyBtnHoverTest">
+                  </a> <!-- googleFeelingLuckyBtnHoverTest -->
+                  <span class="method-name">googleFeelingLuckyBtnHoverTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;FPdoLc&apos;]&quot;}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Zeynabs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:81a:3b8b:484:a489%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/33/jjj5dygj359...}, goog:chromeOptions: {debuggerAddress: localhost:50711}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1bc6ec75c66f386ec7418121922b3210
+*** Element info: {Using=xpath, value=//div[@class=&apos;FPdoLc&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest.googleFeelingLuckyBtnHoverTest(ActionsDemoTest.java:55)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 41 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.cybertek.tests.day16_download_js_executor.FileUploadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadFileTest">
+                  </a> <!-- uploadFileTest -->
+                  <span class="method-name">uploadFileTest</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : /Users/zeynabnasibova/Downloads/some-file.txt
+  (Session info: chrome=96.0.4664.110)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Zeynabs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:81a:3b8b:484:a489%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/33/jjj5dygj359...}, goog:chromeOptions: {debuggerAddress: localhost:50566}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dcd5519bd4312d00482ef73d20015dca
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.cybertek.tests.day16_download_js_executor.FileUploadTest.uploadFileTest(FileUploadTest.java:16)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 41 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.cybertek.officeHours.oH04.placeOrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="placeOrder">
+                  </a> <!-- placeOrder -->
+                  <span class="method-name">placeOrder</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Zeynabs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:81a:3b8b:484:a489%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/33/jjj5dygj359...}, goog:chromeOptions: {debuggerAddress: localhost:49465}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6024a37fb23914e4eebfe92170a3a7cd
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.cybertek.utils.officeUtils.addProduct(officeUtils.java:24)
+	at com.cybertek.officeHours.oH04.placeOrderTest.placeOrder(placeOrderTest.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 41 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="confirmAlertTest">
+                  </a> <!-- confirmAlertTest -->
+                  <span class="method-name">confirmAlertTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [You successfuly clicked an alert] but found [You clicked: Cancel]
+	at com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest.confirmAlertTest(AlertExamplesTest.java:64)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 43 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day09_testing_dropdowns.TestNGIntro</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="myTest2">
+                  </a> <!-- myTest2 -->
+                  <span class="method-name">myTest2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day18_actions_pom_intro.ActionsSendKeysTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="rightClickTest">
+                  </a> <!-- rightClickTest -->
+                  <span class="method-name">rightClickTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="scrollWithKeysTest">
+                  </a> <!-- scrollWithKeysTest -->
+                  <span class="method-name">scrollWithKeysTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day14_utils_webtables_properties.SmartBearProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLinksAfterLogin">
+                  </a> <!-- verifyLinksAfterLogin -->
+                  <span class="method-name">verifyLinksAfterLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day15_properties_driverutil_testbase.PropertiesFileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="configurationReaderUnitTest">
+                  </a> <!-- configurationReaderUnitTest -->
+                  <span class="method-name">configurationReaderUnitTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="readValuesFromPropertiesFile">
+                  </a> <!-- readValuesFromPropertiesFile -->
+                  <span class="method-name">readValuesFromPropertiesFile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day19_page_object_model.DragAndDropTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="guru99DragAndDropTest">
+                  </a> <!-- guru99DragAndDropTest -->
+                  <span class="method-name">guru99DragAndDropTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day18_actions_pom_intro.ActionsDoubleClickTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doubleClickForColorChange">
+                  </a> <!-- doubleClickForColorChange -->
+                  <span class="method-name">doubleClickForColorChange</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="hoverElementTest">
+                  </a> <!-- hoverElementTest -->
+                  <span class="method-name">hoverElementTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hoverOverGroupElements">
+                  </a> <!-- hoverOverGroupElements -->
+                  <span class="method-name">hoverOverGroupElements</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day12_windows_practice_faker.DemoQAMultipleWindowsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="newWindowTest">
+                  </a> <!-- newWindowTest -->
+                  <span class="method-name">newWindowTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="infoAlertTest">
+                  </a> <!-- infoAlertTest -->
+                  <span class="method-name">infoAlertTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="promptAlertTest">
+                  </a> <!-- promptAlertTest -->
+                  <span class="method-name">promptAlertTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day11_alerts_iframe_windows.IFrameExampleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="iframeTest">
+                  </a> <!-- iframeTest -->
+                  <span class="method-name">iframeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="multipleFramesTest">
+                  </a> <!-- multipleFramesTest -->
+                  <span class="method-name">multipleFramesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day20_review_wait.IframeActionsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day10_dropdow_alerts_iframes_windows.AmazonDepartmentNamesListTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="amazonDepartmentTest">
+                  </a> <!-- amazonDepartmentTest -->
+                  <span class="method-name">amazonDepartmentTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllColumnData">
+                  </a> <!-- getAllColumnData -->
+                  <span class="method-name">getAllColumnData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="printAllTableDataTest">
+                  </a> <!-- printAllTableDataTest -->
+                  <span class="method-name">printAllTableDataTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="readFromTableTest">
+                  </a> <!-- readFromTableTest -->
+                  <span class="method-name">readFromTableTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="readNeighborCell">
+                  </a> <!-- readNeighborCell -->
+                  <span class="method-name">readNeighborCell</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day13_faker_practice_browserutil_properties.RegistrationFormNegativeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidFirstNameTest">
+                  </a> <!-- invalidFirstNameTest -->
+                  <span class="method-name">invalidFirstNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day11_alerts_iframe_windows.MultipleWindowsExampleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="demoQAMultipleWindows">
+                  </a> <!-- demoQAMultipleWindows -->
+                  <span class="method-name">demoQAMultipleWindows</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="windowsTest">
+                  </a> <!-- windowsTest -->
+                  <span class="method-name">windowsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day15_properties_driverutil_testbase.SystemPropertiesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="readingSystemProperties">
+                  </a> <!-- readingSystemProperties -->
+                  <span class="method-name">readingSystemProperties</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day15_properties_driverutil_testbase.DriverUtilTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="driverClasstest">
+                  </a> <!-- driverClasstest -->
+                  <span class="method-name">driverClasstest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day10_dropdow_alerts_iframes_windows.CarGurusUsedCarSearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchForMinivanTest">
+                  </a> <!-- searchForMinivanTest -->
+                  <span class="method-name">searchForMinivanTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day10_dropdow_alerts_iframes_windows.HandingAlertsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="jsAlertsTest">
+                  </a> <!-- jsAlertsTest -->
+                  <span class="method-name">jsAlertsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day09_testing_dropdowns.DropDownTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="simpleDropDownTest">
+                  </a> <!-- simpleDropDownTest -->
+                  <span class="method-name">simpleDropDownTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="titleTest">
+                  </a> <!-- titleTest -->
+                  <span class="method-name">titleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day08_implicitwait_checkbox_radio_testing.TestNGIntro</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day16_download_js_executor.FileDownloadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fileDownloadTest">
+                  </a> <!-- fileDownloadTest -->
+                  <span class="method-name">fileDownloadTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="alertExampleTest">
+                  </a> <!-- alertExampleTest -->
+                  <span class="method-name">alertExampleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="scrollTest">
+                  </a> <!-- scrollTest -->
+                  <span class="method-name">scrollTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="scrollToElementTest">
+                  </a> <!-- scrollToElementTest -->
+                  <span class="method-name">scrollToElementTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setValueusingJSTest">
+                  </a> <!-- setValueusingJSTest -->
+                  <span class="method-name">setValueusingJSTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day15_properties_driverutil_testbase.TechlisticWebtableTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tallBuildingsTableTest">
+                  </a> <!-- tallBuildingsTableTest -->
+                  <span class="method-name">tallBuildingsTableTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day18_actions_pom_intro.EtsySubscribeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="randomEmailSubscribeTest">
+                  </a> <!-- randomEmailSubscribeTest -->
+                  <span class="method-name">randomEmailSubscribeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day19_page_object_model.LibraryLoginPOMTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidCredentialsTest">
+                  </a> <!-- invalidCredentialsTest -->
+                  <span class="method-name">invalidCredentialsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveLoginTest">
+                  </a> <!-- positiveLoginTest -->
+                  <span class="method-name">positiveLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day18_actions_pom_intro.ActionsDragAndDropTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dragAndDropTest">
+                  </a> <!-- dragAndDropTest -->
+                  <span class="method-name">dragAndDropTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cybertek.tests.day13_faker_practice_browserutil_properties.RegistrationFormTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="formTest">
+                  </a> <!-- formTest -->
+                  <span class="method-name">formTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Command line suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Command line test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.cybertek.officeHours.oH04.placeOrderTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.officeHours.oH01.UI01_PolymerTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day08_implicitwait_checkbox_radio_testing.RadioButtonsTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day08_implicitwait_checkbox_radio_testing.EtsyRadioCheckboxTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day08_implicitwait_checkbox_radio_testing.TestNGIntro&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day17_upload_js_executor.Guru99UploadTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day04_locators_getattribute.PercentageCalculatorTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day07_findElements.CalculatorAddTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day06_css_clear.ForrgotPassword_CSS_Test&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day14_utils_webtables_properties.SmartBearProductTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day11_alerts_iframe_windows.IFrameExampleTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day11_alerts_iframe_windows.MultipleWindowsExampleTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day15_properties_driverutil_testbase.PropertiesFileTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day15_properties_driverutil_testbase.DriverUtilTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day15_properties_driverutil_testbase.SystemPropertiesTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day15_properties_driverutil_testbase.TechlisticWebtableTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day10_dropdow_alerts_iframes_windows.AmazonDepartmentNamesListTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day10_dropdow_alerts_iframes_windows.HandingAlertsTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day10_dropdow_alerts_iframes_windows.CarGurusUsedCarSearchTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day1_selenium_intro.SeleniumTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day16_download_js_executor.FileDownloadTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day16_download_js_executor.FileUploadTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day13_faker_practice_browserutil_properties.RegistrationFormNegativeTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day13_faker_practice_browserutil_properties.RegistrationFormTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day09_testing_dropdowns.DropDownTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day09_testing_dropdowns.TestNGIntro&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day18_actions_pom_intro.ActionsDoubleClickTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day18_actions_pom_intro.EtsySubscribeTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day18_actions_pom_intro.ActionsDragAndDropTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day18_actions_pom_intro.ActionsSendKeysTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day20_review_wait.IframeActionsTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day05_xpath_css_isdisplayed.WorldPopulationXpathTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day05_xpath_css_isdisplayed.WebDriverFactoryTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day05_xpath_css_isdisplayed.P6_MultipleButtonsXpathTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day05_xpath_css_isdisplayed.GoogleMapsXpathTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.TestBase&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day12_windows_practice_faker.DemoQAMultipleWindowsTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day03_locators_intro.TC5_SmartBearLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day19_page_object_model.LibraryLoginPOMTest&quot;/&gt;
+      &lt;class name=&quot;com.cybertek.tests.day19_page_object_model.DragAndDropTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (44 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(50);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'searchForMinivanTest')
+data.setCell(0, 2, 'com.cybertek.tests.day10_dropdow_alerts_iframes_windows.CarGurusUsedCarSearchTest')
+data.setCell(0, 3, 89670);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'amazonDepartmentTest')
+data.setCell(1, 2, 'com.cybertek.tests.day10_dropdow_alerts_iframes_windows.AmazonDepartmentNamesListTest')
+data.setCell(1, 3, 40884);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'cargurusPriceSliderTest')
+data.setCell(2, 2, 'com.cybertek.tests.day19_page_object_model.DragAndDropTest')
+data.setCell(2, 3, 29577);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'driverClasstest')
+data.setCell(3, 2, 'com.cybertek.tests.day15_properties_driverutil_testbase.DriverUtilTest')
+data.setCell(3, 3, 19721);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'scrollTest')
+data.setCell(4, 2, 'com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest')
+data.setCell(4, 3, 13660);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'googleFeelingLuckyBtnHoverTest')
+data.setCell(5, 2, 'com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest')
+data.setCell(5, 3, 12056);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test')
+data.setCell(6, 2, 'com.cybertek.tests.day20_review_wait.IframeActionsTest')
+data.setCell(6, 3, 11737);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'randomEmailSubscribeTest')
+data.setCell(7, 2, 'com.cybertek.tests.day18_actions_pom_intro.EtsySubscribeTest')
+data.setCell(7, 3, 10670);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'doubleClickForColorChange')
+data.setCell(8, 2, 'com.cybertek.tests.day18_actions_pom_intro.ActionsDoubleClickTest')
+data.setCell(8, 3, 10061);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'formTest')
+data.setCell(9, 2, 'com.cybertek.tests.day13_faker_practice_browserutil_properties.RegistrationFormTest')
+data.setCell(9, 3, 6533);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'tallBuildingsTableTest')
+data.setCell(10, 2, 'com.cybertek.tests.day15_properties_driverutil_testbase.TechlisticWebtableTest')
+data.setCell(10, 3, 5942);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'guru99DragAndDropTest')
+data.setCell(11, 2, 'com.cybertek.tests.day19_page_object_model.DragAndDropTest')
+data.setCell(11, 3, 5459);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'iframeTest')
+data.setCell(12, 2, 'com.cybertek.tests.day11_alerts_iframe_windows.IFrameExampleTest')
+data.setCell(12, 3, 5355);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'invalidFirstNameTest')
+data.setCell(13, 2, 'com.cybertek.tests.day13_faker_practice_browserutil_properties.RegistrationFormNegativeTest')
+data.setCell(13, 3, 4648);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'newWindowTest')
+data.setCell(14, 2, 'com.cybertek.tests.day12_windows_practice_faker.DemoQAMultipleWindowsTest')
+data.setCell(14, 3, 4640);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'hoverOverGroupElements')
+data.setCell(15, 2, 'com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest')
+data.setCell(15, 3, 4518);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'scrollWithKeysTest')
+data.setCell(16, 2, 'com.cybertek.tests.day18_actions_pom_intro.ActionsSendKeysTest')
+data.setCell(16, 3, 4437);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'scrollToElementTest')
+data.setCell(17, 2, 'com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest')
+data.setCell(17, 3, 4114);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'promptAlertTest')
+data.setCell(18, 2, 'com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest')
+data.setCell(18, 3, 3387);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'fileDownloadTest')
+data.setCell(19, 2, 'com.cybertek.tests.day16_download_js_executor.FileDownloadTest')
+data.setCell(19, 3, 3379);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'setValueusingJSTest')
+data.setCell(20, 2, 'com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest')
+data.setCell(20, 3, 3014);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'demoQAMultipleWindows')
+data.setCell(21, 2, 'com.cybertek.tests.day11_alerts_iframe_windows.MultipleWindowsExampleTest')
+data.setCell(21, 3, 2987);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'positiveLoginTest')
+data.setCell(22, 2, 'com.cybertek.tests.day19_page_object_model.LibraryLoginPOMTest')
+data.setCell(22, 3, 2981);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'hoverElementTest')
+data.setCell(23, 2, 'com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest')
+data.setCell(23, 3, 2867);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'dragAndDropTest')
+data.setCell(24, 2, 'com.cybertek.tests.day18_actions_pom_intro.ActionsDragAndDropTest')
+data.setCell(24, 3, 2811);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'placeOrder')
+data.setCell(25, 2, 'com.cybertek.officeHours.oH04.placeOrderTest')
+data.setCell(25, 3, 2127);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'alertExampleTest')
+data.setCell(26, 2, 'com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest')
+data.setCell(26, 3, 2097);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'uploadFileTest')
+data.setCell(27, 2, 'com.cybertek.tests.day17_upload_js_executor.Guru99UploadTest')
+data.setCell(27, 3, 1984);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'rightClickTest')
+data.setCell(28, 2, 'com.cybertek.tests.day18_actions_pom_intro.ActionsSendKeysTest')
+data.setCell(28, 3, 1886);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'windowsTest')
+data.setCell(29, 2, 'com.cybertek.tests.day11_alerts_iframe_windows.MultipleWindowsExampleTest')
+data.setCell(29, 3, 1727);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'invalidCredentialsTest')
+data.setCell(30, 2, 'com.cybertek.tests.day19_page_object_model.LibraryLoginPOMTest')
+data.setCell(30, 3, 1627);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'uploadFileTest')
+data.setCell(31, 2, 'com.cybertek.tests.day16_download_js_executor.FileUploadTest')
+data.setCell(31, 3, 1338);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'verifyLinksAfterLogin')
+data.setCell(32, 2, 'com.cybertek.tests.day14_utils_webtables_properties.SmartBearProductTest')
+data.setCell(32, 3, 956);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'multipleFramesTest')
+data.setCell(33, 2, 'com.cybertek.tests.day11_alerts_iframe_windows.IFrameExampleTest')
+data.setCell(33, 3, 721);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'printAllTableDataTest')
+data.setCell(34, 2, 'com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest')
+data.setCell(34, 3, 600);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'infoAlertTest')
+data.setCell(35, 2, 'com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest')
+data.setCell(35, 3, 448);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'readFromTableTest')
+data.setCell(36, 2, 'com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest')
+data.setCell(36, 3, 433);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'confirmAlertTest')
+data.setCell(37, 2, 'com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest')
+data.setCell(37, 3, 345);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'jsAlertsTest')
+data.setCell(38, 2, 'com.cybertek.tests.day10_dropdow_alerts_iframes_windows.HandingAlertsTest')
+data.setCell(38, 3, 237);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'getAllColumnData')
+data.setCell(39, 2, 'com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest')
+data.setCell(39, 3, 204);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'simpleDropDownTest')
+data.setCell(40, 2, 'com.cybertek.tests.day09_testing_dropdowns.DropDownTest')
+data.setCell(40, 3, 204);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'readNeighborCell')
+data.setCell(41, 2, 'com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest')
+data.setCell(41, 3, 140);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'titleTest')
+data.setCell(42, 2, 'com.cybertek.tests.day09_testing_dropdowns.DropDownTest')
+data.setCell(42, 3, 26);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'readValuesFromPropertiesFile')
+data.setCell(43, 2, 'com.cybertek.tests.day15_properties_driverutil_testbase.PropertiesFileTest')
+data.setCell(43, 3, 2);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'test1')
+data.setCell(44, 2, 'com.cybertek.tests.day08_implicitwait_checkbox_radio_testing.TestNGIntro')
+data.setCell(44, 3, 1);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'configurationReaderUnitTest')
+data.setCell(45, 2, 'com.cybertek.tests.day15_properties_driverutil_testbase.PropertiesFileTest')
+data.setCell(45, 3, 1);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'readingSystemProperties')
+data.setCell(46, 2, 'com.cybertek.tests.day15_properties_driverutil_testbase.SystemPropertiesTest')
+data.setCell(46, 3, 1);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'myTest2')
+data.setCell(47, 2, 'com.cybertek.tests.day09_testing_dropdowns.TestNGIntro')
+data.setCell(47, 3, 0);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'test1')
+data.setCell(48, 2, 'com.cybertek.tests.day09_testing_dropdowns.TestNGIntro')
+data.setCell(48, 3, 0);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'test2')
+data.setCell(49, 2, 'com.cybertek.tests.day08_implicitwait_checkbox_radio_testing.TestNGIntro')
+data.setCell(49, 3, 0);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.cybertek.tests.day10_dropdow_alerts_iframes_windows.AmazonDepartmentNamesListTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testDemo</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.officeHours.oH04.placeOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">placeOrder</span>
+                <span class="method-start">6272 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">8422 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day08_implicitwait_checkbox_radio_testing.TestNGIntro</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">8526 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test2</span>
+                <span class="method-start">8528 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day17_upload_js_executor.Guru99UploadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">8530 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">uploadFileTest</span>
+                <span class="method-start">10588 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">12575 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day17_upload_js_executor.JavaScriptExecutorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">12655 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">alertExampleTest</span>
+                <span class="method-start">14072 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16175 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">16259 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">scrollTest</span>
+                <span class="method-start">17753 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">31421 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">31509 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">scrollToElementTest</span>
+                <span class="method-start">32964 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">37089 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">37172 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">setValueusingJSTest</span>
+                <span class="method-start">38547 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">41562 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day14_utils_webtables_properties.WebTableDemoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">41640 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getAllColumnData</span>
+                <span class="method-start">44225 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">44434 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">printAllTableDataTest</span>
+                <span class="method-start">47088 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">47689 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">readFromTableTest</span>
+                <span class="method-start">50528 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">50962 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">readNeighborCell</span>
+                <span class="method-start">53678 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day14_utils_webtables_properties.SmartBearProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">53820 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLinksAfterLogin</span>
+                <span class="method-start">55966 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">56925 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day11_alerts_iframe_windows.IFrameExampleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">56929 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">iframeTest</span>
+                <span class="method-start">61303 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">66659 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">multipleFramesTest</span>
+                <span class="method-start">71047 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day11_alerts_iframe_windows.AlertExamplesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">71774 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">confirmAlertTest</span>
+                <span class="method-start">74540 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">74888 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">infoAlertTest</span>
+                <span class="method-start">77333 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">77786 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">promptAlertTest</span>
+                <span class="method-start">80402 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day11_alerts_iframe_windows.MultipleWindowsExampleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">83797 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">demoQAMultipleWindows</span>
+                <span class="method-start">85250 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">88239 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">windowsTest</span>
+                <span class="method-start">90049 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day15_properties_driverutil_testbase.PropertiesFileTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">configurationReaderUnitTest</span>
+                <span class="method-start">91784 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">readValuesFromPropertiesFile</span>
+                <span class="method-start">91785 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day15_properties_driverutil_testbase.DriverUtilTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">driverClasstest</span>
+                <span class="method-start">91788 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day15_properties_driverutil_testbase.SystemPropertiesTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">readingSystemProperties</span>
+                <span class="method-start">111515 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day15_properties_driverutil_testbase.TechlisticWebtableTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">111519 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tallBuildingsTableTest</span>
+                <span class="method-start">111520 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">117464 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day10_dropdow_alerts_iframes_windows.AmazonDepartmentNamesListTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">117643 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">amazonDepartmentTest</span>
+                <span class="method-start">122702 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">163589 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day10_dropdow_alerts_iframes_windows.HandingAlertsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">163722 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">jsAlertsTest</span>
+                <span class="method-start">166889 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day10_dropdow_alerts_iframes_windows.CarGurusUsedCarSearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">167132 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">searchForMinivanTest</span>
+                <span class="method-start">174614 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">264286 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day16_download_js_executor.FileDownloadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">264474 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fileDownloadTest</span>
+                <span class="method-start">266717 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">270099 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day16_download_js_executor.FileUploadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">270184 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">uploadFileTest</span>
+                <span class="method-start">271626 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">272967 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day13_faker_practice_browserutil_properties.RegistrationFormNegativeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">273045 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidFirstNameTest</span>
+                <span class="method-start">276071 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">280722 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day13_faker_practice_browserutil_properties.RegistrationFormTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">280727 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">formTest</span>
+                <span class="method-start">283762 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">290300 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day09_testing_dropdowns.DropDownTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">290308 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">simpleDropDownTest</span>
+                <span class="method-start">293250 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">293461 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">293472 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">titleTest</span>
+                <span class="method-start">296306 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">296332 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day09_testing_dropdowns.TestNGIntro</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">296334 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpApp</span>
+                <span class="method-start">296335 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">296335 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpApp</span>
+                <span class="method-start">296335 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">296335 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">myTest2</span>
+                <span class="method-start">296336 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">296336 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day09_testing_dropdowns.TestNGIntro</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">296336 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">296336 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day18_actions_pom_intro.ActionsDemoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">googleFeelingLuckyBtnHoverTest</span>
+                <span class="method-start">297961 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">310028 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">310173 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">hoverElementTest</span>
+                <span class="method-start">312164 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">315038 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">315128 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">hoverOverGroupElements</span>
+                <span class="method-start">316493 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">321013 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day18_actions_pom_intro.ActionsDoubleClickTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">321096 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">doubleClickForColorChange</span>
+                <span class="method-start">322472 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">332540 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day18_actions_pom_intro.EtsySubscribeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">332772 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">randomEmailSubscribeTest</span>
+                <span class="method-start">334122 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">344800 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day18_actions_pom_intro.ActionsDragAndDropTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">344894 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dragAndDropTest</span>
+                <span class="method-start">346315 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">349127 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day18_actions_pom_intro.ActionsSendKeysTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">349205 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">rightClickTest</span>
+                <span class="method-start">350664 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">352552 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">352635 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">scrollWithKeysTest</span>
+                <span class="method-start">354028 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">358466 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day20_review_wait.IframeActionsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">358548 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">359949 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">371691 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day12_windows_practice_faker.DemoQAMultipleWindowsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">371895 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">newWindowTest</span>
+                <span class="method-start">376268 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">380911 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day19_page_object_model.LibraryLoginPOMTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">380994 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidCredentialsTest</span>
+                <span class="method-start">382419 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">384046 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">384124 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">positiveLoginTest</span>
+                <span class="method-start">385796 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">388780 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cybertek.tests.day19_page_object_model.DragAndDropTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">388866 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">cargurusPriceSliderTest</span>
+                <span class="method-start">390302 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">419892 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">420106 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">guru99DragAndDropTest</span>
+                <span class="method-start">421928 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">427392 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

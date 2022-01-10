@@ -1,0 +1,32 @@
+package com.cybertek.pages;
+
+import com.cybertek.utils.Driver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LibraryLoginPage {
+
+    //When we write page object classes, we always need to add a constructor.
+    public LibraryLoginPage(){
+        // Selenium command to initialize the elements below
+        //PageFactory it is a class comes from selenium library.
+        // If we not add PageFactory to our constructor,then we will get NullPointerExceptionException
+        PageFactory.initElements(Driver.getDriver(),this); // it has 2 parameters First  ->WebDriver instance/object.
+        // Second ->this -> points to this instance of the class
+
+    }
+    @FindBy(id="inputEmail")
+    public WebElement email; //WebElement email = driver.findElement(By.id("inputEmail"))
+
+    @FindBy(id="inputPassword")
+    public WebElement password;
+
+    @FindBy(xpath="//button[.='Sign in']")
+    public WebElement signInBtn;
+
+    @FindBy(xpath="//div[.='Sorry, Wrong Email or Password']")
+    public WebElement errorMsg;
+
+}
